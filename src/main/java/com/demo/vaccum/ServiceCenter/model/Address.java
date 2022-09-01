@@ -23,6 +23,7 @@ public class Address {
 	private String city;
 	private String state;
 	private String landMark;
+	private String pinCode;
 	@OneToOne(mappedBy = "address")
 	@JsonIgnore
 	private ServiceCenter serviceCenter;

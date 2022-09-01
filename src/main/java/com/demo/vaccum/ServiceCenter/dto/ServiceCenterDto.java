@@ -13,6 +13,6 @@ public class ServiceCenterDto {
 	private String description;
 	private String email;
 	private String imgUrl;
-	private String mobileNumber;
+	private long mobileNumber;
 	private int addressId;
 }

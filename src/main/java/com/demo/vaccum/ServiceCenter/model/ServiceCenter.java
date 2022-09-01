@@ -23,7 +23,7 @@ public class ServiceCenter {
 	private String description;
 	private String email;
 	private String imgUrl;
-	private String mobileNumber;
+	private long mobileNumber;
 	@OneToOne
 	@JoinColumn(name = "address_id", referencedColumnName = "id")
 	private Address address;

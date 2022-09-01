@@ -81,6 +81,15 @@ public class ServiceCenterServiceImp implements ServiceCenterService{
 		}
 		return "Service center deleted failed";
 	}
+
+	@Override
+	public List<ServiceCenter> findByMultipleIds(List<Integer> ids) {
+		List<ServiceCenter> center = new ArrayList<>();
+		for(Integer id : ids) {
+			center.add(findById(id));
+		}
+		return center;
+	}
 	
 	
 

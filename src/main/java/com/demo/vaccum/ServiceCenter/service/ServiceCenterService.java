@@ -18,5 +18,5 @@ public interface ServiceCenterService {
 	
 	String deleteServiceCenter(int id);
 	
-	
+	List<ServiceCenter> findByMultipleIds(List<Integer> id);
 }

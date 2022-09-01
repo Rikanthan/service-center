@@ -51,4 +51,8 @@ public class ServiceCenterController {
 	public String deleteServiceCenter(@RequestParam int id) {
 		return service.deleteServiceCenter(id);
 	}
+	@GetMapping(value ="/findByMultipleId")
+	public List<ServiceCenter> findByMultipleId(@RequestParam List<Integer> id){
+		return service.findByMultipleIds(id);
+	}
 }
